@@ -1,0 +1,51 @@
+﻿ @using SchoolWeb2.Models
+ @model RoleUpdate
+ 
+@{
+	ViewData["Title"] = "UPDATE ROLE";
+}
+<h3 >Edit role</h3>
+ 
+<div asp-validation-summary="All" class="text-danger"></div>
+<form method="post">
+	<input type="hidden" name="roleName" value="@Model.Role.Name" />
+	<input type="hidden" name="roleID" value="@Model.Role.Id" />
+	<h4 class="bg-success p-1 text-white" >Add to @Model.Role.Name</h4>
+	<table class="table table-bordered table-sm">
+
+	@if(Model.NonMembers.Count()==0){
+		<tr><td colspan="2">All users are members</td></tr>
+	}else{
+		@foreach(AppUser user in Model.NonMembers){
+			<tr>
+				<td>@user.UserName</td>
+				<td>
+					<input type="checkbox" name="AddIds" value="@user.Id" />
+				</td>
+			</tr>
+		}
+	}
+	</table>
+	<h4 class="bg-danger text-white p-1">Remove from @Model.Role.Name</h4>
+	<table class="table table-bordered table-sm">
+		@if(Model.Members.Count()==0){
+			<tr>
+				<td colspan="2">No users are member</td>
+			</tr>
+		}
+		else{
+			@foreach(AppUser user in Model.Members){
+				<tr>
+					<td>@user.UserName</td>
+					<td>
+						<input type="checkbox" name="DeleteIds" value="@user.Id" />
+					</td>
+				</tr>
+			}
+		}
+	</table>
+	<div class="d-grid gap-2">
+	<button class="btn btn-primary" type="submit" >Save</button>
+	</div>
+</form>
+

@@ -1,0 +1,39 @@
+﻿ @using SchoolWeb2.ViewModels
+ @model IEnumerable< AppUser>
+@{
+	ViewData["Title"] = "LIST OF USERS";
+}
+<h1>List of users</h1>
+<div class="d-grid gap-2">
+	<a class="btn btn-primary" asp-action="Create">Create user</a>
+</div>
+<table class="table table-sm table-bordered table-striped ">
+	<tr>
+		<th>Name</th>
+		<th>Email</th>
+		<th>ID</th>
+		<th>Update</th>
+		<th>Delete</th>
+	</tr>
+
+	@foreach (var user in Model)
+	{
+		<tr>
+			<td>@user.UserName</td>
+			<td>@user.Email</td>
+			<td>@user.Id</td>
+			<td class="col-1">
+				<div class="d-grid gap-2">
+					<a class="btn btn-sm btn-outline-primary" asp-action="Update" asp-route-id="@user.Id">Update</a>
+				</div>
+			</td>
+			<td class="col-1">
+				<form method="post" asp-action="Delete" asp-route-id="@user.Id">
+					<div class="d-grid gap-2">
+						<button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
+					</div>
+				</form>
+			</td>
+		</tr>
+	}
+</table>

@@ -1,0 +1,20 @@
+﻿@using SchoolWeb2.DTO
+@model StudentDTO
+<div class="form-group">
+	<h1>Edit a student</h1>
+	<form method="post" asp-action="Update" class="form-group">
+		<input type="text" asp-for="Id" hidden/>
+		 
+		<span   class="input-group-text">First Name</span>
+		<input type="text" asp-for="FirstName" class="form-control" />
+		<span class="input-group-text">Last Name</span>
+		 
+		<input type="text" asp-for="LastName" class="form-control" />
+		 
+		<span class="input-group-text">Date of birth</span>
+		<input type="date" asp-for="DateOfBirth" class="form-control" />
+		<div class="d-grid gap-2">
+		<input type="submit" class="btn btn-outline-primary" value="Update" />
+		</div>
+	</form>
+</div> 

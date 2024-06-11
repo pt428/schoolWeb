@@ -1,0 +1,57 @@
+﻿@using SchoolWeb2.DTO
+@model IEnumerable<StudentDTO>
+
+<h1>List of students</h1>
+<div class="d-grid gap-2">
+	<a class="d-inline-block btn btn-primary" asp-action="Create">Create new student</a>
+</div>
+<div class="d-flex flex-row justify-content-between">
+	<form class="form-group" method="get" asp-controller="Students" asp-action="Index">
+		<div class="row g-3 align-items-center">
+
+			<div class="col-auto">
+				<input class="form-control" placeholder="First Name" type="text" name="FirstName" />
+			</div>
+			<div class="col-auto">
+				<input class="form-control" placeholder="Last Name" type="text" name="LastName" />
+			</div>
+			<div class="col-auto">
+				<input class="btn btn-outline-primary" type="submit" value="Use Filter" />
+			</div>
+		</div>
+	</form>
+
+	<form class="form-group" method="post" enctype="multipart/form-data" asp-controller="FileUpload" asp-action="Upload">
+		<input class="btn btn-outline-primary" type="file" name="file" />
+		<input class="btn btn-outline-primary" type="submit" value="Upload" />
+	</form>
+</div>
+<table class="table table-sm table-bordered table-striped ">
+	<tr>
+		<th>Name</th>
+		<th>Date of birth</th>
+		<th>ID</th>
+		<th class="col-1">Edit</th>
+		<th class="col-1">Delete</th>
+	</tr>
+	@foreach (var student in Model)
+	{
+		<tr>
+			<td>@student.FirstName @student.LastName</td>
+			<td>@student.DateOfBirth.ToShortDateString()</td>
+			<td> @student.Id</td>
+			<td>
+				<div class="d-grid gap-2">
+					<a class="btn btn-outline-primary" asp-action="Update" asp-route-id="@student.Id">Update</a>
+				</div>
+			</td>
+			<td>
+				<form method="post">
+					<div class="d-grid gap-2">
+						<button class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@student.Id">Delete</button>
+					</div>
+				</form>
+			</td>
+		</tr>
+	}
+</table>

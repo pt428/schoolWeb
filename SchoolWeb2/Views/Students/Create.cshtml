@@ -1,0 +1,16 @@
+﻿@using SchoolWeb2.DTO
+@model StudentDTO
+<div class="form-group">
+	<h1>Create a new student</h1>
+<form  method="post" asp-action="Create" class="form-group">
+		<span class="input-group-text">First Name</span>
+		<input type="text" asp-for="FirstName" class="form-control" />
+		<span class="input-group-text">Last Name</span>
+		<input type="text" asp-for="LastName" class="form-control" />
+		<span class="input-group-text">Date of birth</span>
+		<input type="date" asp-for="DateOfBirth" class="form-control" />
+		<div class="d-grid gap-2">
+		<input type="submit" class="btn btn-outline-primary" value="Create" />
+		</div>
+ </form>
+</div>

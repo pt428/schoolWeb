@@ -1,0 +1,50 @@
+﻿@using SchoolWeb2.ViewModels
+@model IEnumerable<GradesViewModel>
+
+<h1>List of grades</h1>
+<div class="d-grid gap-2">
+<a asp-action="Create" class="btn btn-primary">Create grade</a>
+</div>
+<table class="table table-sm table-bordered table-striped ">
+	<tr>
+		<th>Name</th>
+		<th>Subject</th>
+		<th>Date</th>
+		<th>What</th>
+		<th>Mark</th>
+		<th>Edit</th>
+		<th>Delete</th>
+	</tr>
+	@foreach (var grade in Model)
+	{
+		<tr>
+			<td>@grade.StudentName</td>
+			<td>@grade.SubjectName</td>
+			<td>@grade.Date.ToShortDateString() </td>
+			<td>@grade.What </td>
+			<td>@grade.Mark </td>
+			@if (User.Identity.IsAuthenticated && User.IsInRole("Teacher") || User.IsInRole("Admin"))
+			{
+
+				<td class="col-1">
+					<div class="d-grid gap-2">
+						<a class="btn btn-outline-success" asp-controller="Grades" asp-action="Edit" asp-route-id="@grade.Id">Edit</a>
+					</div>
+				</td>
+				<td class="col-1">
+					
+					<form method="post">
+						<div class="d-grid gap-2">
+
+							<button class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@grade.Id">Delete</button>
+						</div>
+					</form>
+				</td>
+			}
+		</tr>
+	}
+</table>
+
+
+
+

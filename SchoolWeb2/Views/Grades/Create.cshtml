@@ -1,0 +1,28 @@
+﻿@using SchoolWeb2.DTO
+@model GradeDTO
+<div>
+    <form asp-action="Create">
+        <h4>Create a new grade</h4>
+        <div class="form-group">
+            <span class="input-group-text">Student</span>
+            <select class="form-control" asp-for="StudentId" asp-items="ViewBag.Students" ></select>
+        </div>
+        <div class="form-group">
+            <span class="input-group-text">Subject</span>
+            <select class="form-control" asp-for="SubjectId" asp-items="ViewBag.Subjects"></select>
+        </div>
+        <div class="form-group">
+            <span class="input-group-text">What</span>
+            <input type="text" asp-for="What" placeholder="What was examined" class="form-control" />
+        </div>
+        <div class="form-group">
+            <span class="input-group-text">Mark</span>
+            <input type="number" asp-for="Mark"   class="form-control" />
+        </div>
+        <div class="d-grid gap-2">
+            <input class="btn btn-outline-primary" asp-for="Mark" type="submit" value="Create" />
+        </div>
+    </form>
+</div>
+
+

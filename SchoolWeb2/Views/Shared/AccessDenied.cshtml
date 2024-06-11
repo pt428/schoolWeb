@@ -1,0 +1,10 @@
+﻿<h2 class="bg-danger m-1 p-2 text-whit	">Access denied</h2>
+ 
+@if (User?.Identity?.IsAuthenticated ?? false)
+{
+	<a asp-controller="Account" asp-action="Logout" class="btn-danger">Logout</a>
+}
+else
+{
+	 <a asp-action="Login" asp-controller="Account" class="btn btn-primary">Login</a>
+}

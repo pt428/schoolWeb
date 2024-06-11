@@ -1,0 +1,26 @@
+﻿ @using SchoolWeb2.ViewModels
+ @model UserViewModel
+@{
+	ViewData["Title"] = "CREATE USER";
+}
+ <h1>Create users</h1>
+ <a asp-action="Index" class="btn btn-secondary">Back</a>
+<div asp-validation-summary="All" class="text-danger" >
+	<form method="post">
+		<div class="form-group">
+			<span class="input-group-text">User Name</span>
+			<input type="text" asp-for="UserName" class="form-control" disabled />
+		</div>
+		<div class="form-group">
+			<span class="input-group-text">Email</span>
+			<input type="email" asp-for="Email" class="form-control" />
+		</div>
+		<div class="form-group">
+			<span class="input-group-text">Password</span>
+			<input type="text" class="form-control" name="password" />
+		</div>
+		<div class="d-grid gap-2">
+		<button type="submit" class="btn btn-outline-primary">Create user</button>
+		</div>
+	</form>
+</div>

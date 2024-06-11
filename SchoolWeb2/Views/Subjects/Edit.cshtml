@@ -1,0 +1,12 @@
+﻿ @using SchoolWeb2.DTO
+@model SubjectDTO
+
+<form method="post">
+	<input type="text" asp-for="Id" hidden />
+	<span class="input-group-text">Name</span>
+
+	<input type="text" asp-for="Name" class="form-control" />
+	<div class="d-grid gap-2">
+		<input type="submit" value="Update" name="Edit" asp-action="EditSubject" class="btn btn-outline-primary" />
+	</div>
+</form>

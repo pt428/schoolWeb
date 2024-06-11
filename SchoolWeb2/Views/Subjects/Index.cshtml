@@ -1,0 +1,35 @@
+﻿ @using SchoolWeb2.DTO
+ @model IEnumerable<SubjectDTO>
+
+<h1>List of subjects</h1>
+<div class="d-grid gap-2">
+	<a class="btn btn-primary" asp-action="Add">Add subject</a>
+</div>
+
+<table class="table table-sm table-bordered table-striped ">
+	<tr>
+		<th>Subject</th>
+		<th>Id</th>
+		<th>Edit</th>
+		<th>Delete</th>
+	</tr>
+	@foreach (var subject in Model)
+	{
+		<tr>
+			<td>@subject.Name</td>
+			<td>@subject.Id</td>
+			<td class ="col-1">
+				<div class="d-grid gap-2">
+					<a class="btn btn-outline-success" asp-action="Edit" asp-route-id="@subject.Id">Edit</a>
+				</div>
+			</td>
+			<td class="col-1">
+				<form method="post">
+					<div class="d-grid gap-2">
+						<button class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@subject.Id">Delete</button>
+					</div>
+				</form>
+			</td>
+		</tr>
+	}
+</table>
