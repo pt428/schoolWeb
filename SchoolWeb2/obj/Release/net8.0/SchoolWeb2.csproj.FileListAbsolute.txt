@@ -140,3 +140,4 @@ C:\Users\pt75\source\repos\SchoolWeb2\SchoolWeb2\obj\Release\net8.0\refint\Schoo
 C:\Users\pt75\source\repos\SchoolWeb2\SchoolWeb2\obj\Release\net8.0\SchoolWeb2.pdb
 C:\Users\pt75\source\repos\SchoolWeb2\SchoolWeb2\obj\Release\net8.0\SchoolWeb2.genruntimeconfig.cache
 C:\Users\pt75\source\repos\SchoolWeb2\SchoolWeb2\obj\Release\net8.0\ref\SchoolWeb2.dll
+C:\Users\pt75\source\repos\SchoolWeb2\SchoolWeb2\obj\Release\net8.0\SchoolWeb2.sourcelink.json

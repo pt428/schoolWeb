@@ -7,7 +7,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW76Xfyu59ES3WYdTvLd4ewAAAAACAAAAAAAQZgAAAAEAACAAAADBcBzHmJb5PcvUtdICv4VmbmXYcLuXfeA0as2/rPqrmwAAAAAOgAAAAAIAACAAAACkNQ2+61J/ogDsSOZz/FsKwA9GW2FZVlf7XWwCtu8z/iAAAAB3VaiX5mMqqGgWHRuKedvn9ww3inwBVP3vUhDsbk/NeEAAAACyWaoDo0d/PZOQlU+i36q9mUciUo0ErYnRCQguxj4NrG3nbXgOSnvF7jrirEDp6DlskcWpTT4j2EU7YpTo8nYV</EncryptedPassword>
     <_PublishTargetUrl>ftp://site5444.siteasp.net</_PublishTargetUrl>
-    <History>True|2024-06-11T11:48:46.8921678Z||;True|2024-06-11T13:27:18.5998397+02:00||;True|2024-06-11T13:18:52.0354607+02:00||;</History>
+    <History>True|2024-06-11T17:58:01.3671553Z||;False|2024-06-11T19:45:59.9023029+02:00||;True|2024-06-11T13:48:46.8921678+02:00||;True|2024-06-11T13:27:18.5998397+02:00||;True|2024-06-11T13:18:52.0354607+02:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -15,7 +15,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/04/2024 08:07:47</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>06/11/2024 13:43:48</publishTime>
+      <publishTime>06/11/2024 13:54:38</publishTime>
     </File>
     <File Include="Azure.Core.dll">
       <publishTime>09/07/2023 19:50:30</publishTime>
@@ -126,16 +126,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/23/2021 01:49:58</publishTime>
     </File>
     <File Include="SchoolWeb2.deps.json">
-      <publishTime>06/11/2024 13:47:44</publishTime>
+      <publishTime>06/11/2024 19:56:51</publishTime>
     </File>
     <File Include="SchoolWeb2.dll">
-      <publishTime>06/11/2024 13:47:42</publishTime>
+      <publishTime>11/06/2024 19:43:50</publishTime>
     </File>
     <File Include="SchoolWeb2.exe">
-      <publishTime>06/11/2024 13:47:42</publishTime>
+      <publishTime>11/06/2024 19:43:50</publishTime>
     </File>
     <File Include="SchoolWeb2.pdb">
-      <publishTime>06/11/2024 13:47:42</publishTime>
+      <publishTime>11/06/2024 19:43:50</publishTime>
     </File>
     <File Include="SchoolWeb2.runtimeconfig.json">
       <publishTime>06/10/2024 12:50:40</publishTime>
@@ -165,7 +165,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/23/2021 01:49:44</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>06/11/2024 13:47:44</publishTime>
+      <publishTime>06/11/2024 19:56:51</publishTime>
     </File>
     <File Include="wwwroot/css/site.css">
       <publishTime>06/04/2024 08:07:47</publishTime>

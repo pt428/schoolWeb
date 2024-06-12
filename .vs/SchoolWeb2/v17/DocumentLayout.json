@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\pt75\\source\\repos\\SchoolWeb2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D286F92-7ECC-4242-934B-7EBC05BC5856}|SchoolWeb2\\SchoolWeb2.csproj|c:\\users\\pt75\\source\\repos\\schoolweb2\\schoolweb2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3D286F92-7ECC-4242-934B-7EBC05BC5856}|SchoolWeb2\\SchoolWeb2.csproj|solutionrelative:schoolweb2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3D286F92-7ECC-4242-934B-7EBC05BC5856}|SchoolWeb2\\SchoolWeb2.csproj|c:\\users\\pt75\\source\\repos\\schoolweb2\\schoolweb2\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D286F92-7ECC-4242-934B-7EBC05BC5856}|SchoolWeb2\\SchoolWeb2.csproj|solutionrelative:schoolweb2\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D286F92-7ECC-4242-934B-7EBC05BC5856}|SchoolWeb2\\SchoolWeb2.csproj|c:\\users\\pt75\\source\\repos\\schoolweb2\\schoolweb2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D286F92-7ECC-4242-934B-7EBC05BC5856}|SchoolWeb2\\SchoolWeb2.csproj|solutionrelative:schoolweb2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D286F92-7ECC-4242-934B-7EBC05BC5856}|SchoolWeb2\\SchoolWeb2.csproj|c:\\users\\pt75\\source\\repos\\schoolweb2\\schoolweb2\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D286F92-7ECC-4242-934B-7EBC05BC5856}|SchoolWeb2\\SchoolWeb2.csproj|solutionrelative:schoolweb2\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,7 +21,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 586,
+          "DockedWidth": 826,
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -31,19 +39,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\pt75\\source\\repos\\SchoolWeb2\\SchoolWeb2\\appsettings.json",
-              "RelativeDocumentMoniker": "SchoolWeb2\\appsettings.json",
-              "ToolTip": "C:\\Users\\pt75\\source\\repos\\SchoolWeb2\\SchoolWeb2\\appsettings.json",
-              "RelativeToolTip": "SchoolWeb2\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-11T11:54:19.714Z",
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\pt75\\source\\repos\\SchoolWeb2\\SchoolWeb2\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "SchoolWeb2\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\pt75\\source\\repos\\SchoolWeb2\\SchoolWeb2\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "SchoolWeb2\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T13:28:11.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\pt75\\source\\repos\\SchoolWeb2\\SchoolWeb2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SchoolWeb2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\pt75\\source\\repos\\SchoolWeb2\\SchoolWeb2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SchoolWeb2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T13:28:09.179Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pt75\\source\\repos\\SchoolWeb2\\SchoolWeb2\\Views\\Students\\Index.cshtml",
+              "RelativeDocumentMoniker": "SchoolWeb2\\Views\\Students\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pt75\\source\\repos\\SchoolWeb2\\SchoolWeb2\\Views\\Students\\Index.cshtml",
+              "RelativeToolTip": "SchoolWeb2\\Views\\Students\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T13:15:11.238Z",
+              "EditorCaption": ""
             }
           ]
         }

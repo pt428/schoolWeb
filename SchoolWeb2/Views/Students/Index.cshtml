@@ -10,10 +10,10 @@
 		<div class="row g-3 align-items-center">
 
 			<div class="col-auto">
-				<input class="form-control" placeholder="First Name" type="text" name="FirstName" />
+				<input class="form-control" placeholder="Last Name" type="text" name="LastName" />
 			</div>
 			<div class="col-auto">
-				<input class="form-control" placeholder="Last Name" type="text" name="LastName" />
+				<input class="form-control" placeholder="First Name" type="text" name="FirstName" />
 			</div>
 			<div class="col-auto">
 				<input class="btn btn-outline-primary" type="submit" value="Use Filter" />
@@ -22,7 +22,7 @@
 	</form>
 
 	<form class="form-group" method="post" enctype="multipart/form-data" asp-controller="FileUpload" asp-action="Upload">
-		<input class="btn btn-outline-primary" type="file" name="file" />
+		<input class="btn btn-outline-primary" type="file" name="file" accept=".xml" />
 		<input class="btn btn-outline-primary" type="submit" value="Upload" />
 	</form>
 </div>
@@ -37,7 +37,7 @@
 	@foreach (var student in Model)
 	{
 		<tr>
-			<td>@student.FirstName @student.LastName</td>
+			<td> @student.LastName @student.FirstName</td>
 			<td>@student.DateOfBirth.ToShortDateString()</td>
 			<td> @student.Id</td>
 			<td>

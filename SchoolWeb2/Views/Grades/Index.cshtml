@@ -3,7 +3,7 @@
 
 <h1>List of grades</h1>
 <div class="d-grid gap-2">
-<a asp-action="Create" class="btn btn-primary">Create grade</a>
+	<a asp-action="Create" class="btn btn-primary">Create grade</a>
 </div>
 <table class="table table-sm table-bordered table-striped ">
 	<tr>
@@ -12,8 +12,11 @@
 		<th>Date</th>
 		<th>What</th>
 		<th>Mark</th>
-		<th>Edit</th>
-		<th>Delete</th>
+		@if (User.Identity.IsAuthenticated && User.IsInRole("Teacher") || User.IsInRole("Admin"))
+		{
+			<th>Edit</th>
+			<th>Delete</th>
+		}
 	</tr>
 	@foreach (var grade in Model)
 	{
@@ -32,7 +35,7 @@
 					</div>
 				</td>
 				<td class="col-1">
-					
+
 					<form method="post">
 						<div class="d-grid gap-2">
 

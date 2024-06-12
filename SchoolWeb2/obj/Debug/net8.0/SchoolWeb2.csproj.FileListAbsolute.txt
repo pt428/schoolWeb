@@ -140,3 +140,4 @@ C:\Users\pt75\source\repos\SchoolWeb2\SchoolWeb2\bin\Debug\net8.0\Microsoft.AspN
 C:\Users\pt75\source\repos\SchoolWeb2\SchoolWeb2\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\pt75\source\repos\SchoolWeb2\SchoolWeb2\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\pt75\source\repos\SchoolWeb2\SchoolWeb2\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\pt75\source\repos\SchoolWeb2\SchoolWeb2\obj\Debug\net8.0\SchoolWeb2.sourcelink.json

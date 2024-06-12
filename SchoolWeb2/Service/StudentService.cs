@@ -27,7 +27,7 @@ namespace SchoolWeb2.Service
 		//**************************
 		public async Task<IEnumerable<StudentDTO>> GetAllStudentsAsync(StudentParameters studentParameter)
 		{
-			IQueryable<Student> allStudents = _appDbContext.Students;
+			IQueryable<Student> allStudents = _appDbContext.Students.OrderBy(x=>x.LastName);
 			if (studentParameter.FirstName != null)
 			{
 				allStudents= allStudents.Where(s => s.FirstName == studentParameter.FirstName);
